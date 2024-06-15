@@ -24,12 +24,12 @@ input ProductSortInput {
 }
 
 type ProductList {
-    items: [ProductOutput] @doc(description: "The array of the Product")
+    items: [ProductOutputSalman] @doc(description: "The array of the Product")
     page_info: SearchResultPageInfo @doc(description: "An object that includes the page_info and currentPage values specified in the query.")
     total_count: Int @doc(description: "The number of products returned.")
 }
 
-type ProductOutput {
+type ProductOutputSalman {
     entity_id: Int @doc(description: "entity id product")
     name: String @doc(description: "product name")
     sku: String @doc(description: "sku product")
