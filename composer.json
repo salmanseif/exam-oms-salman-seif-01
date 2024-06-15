@@ -1,0 +1,20 @@
+{
+    "name": "salmanseif/exam-oms-salman-seif-01",
+    "type": "magento2-component",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "salmanseif",
+            "email": "salman.seif@sirclo.com"
+        }
+    ],
+    "description": "Module Exam Oms",
+    "autoload": {
+        "files": [
+            "src/exam-oms/registration.php"
+        ],
+        "psr-4": {
+            "SalmanSeif\\ExamOms\\": "src/exam-oms"
+        }
+    }
+}
