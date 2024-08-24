@@ -117,6 +117,7 @@ class GetProductList implements ResolverInterface
             }
         }
 
+        $this->searchCriteriaHelper->setColumns(['name','description','sku']);
         $searchCriteria = $this->searchCriteriaHelper->build($args);
         $searchResult = $this->productRepository->getList($searchCriteria);
 
